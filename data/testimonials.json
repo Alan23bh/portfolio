@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Harry",
+    "role": "Senior Developer",
+    "company": "F.E.N",
+    "quote": "Alan is thoughtful, hardworking, and consistently willing to dig deeper to understand how things work. He brings strong curiosity and a real desire to improve."
+  },
+  {
+    "name": "Alba",
+    "role": "Business Owner",
+    "company": "BitaRosa",
+    "quote": "Alan was reliable, detail-oriented, and easy to communicate with. He took feedback well and cared about making the final result polished and useful."
+  },
+  {
+    "name": "Placeholder Name",
+    "role": "Colleague",
+    "company": "Example Company",
+    "quote": "Working with Alan was a great experience. He stayed organized, asked smart questions, and always pushed toward a better final outcome."
+  }
+]

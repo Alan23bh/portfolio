@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "teacher-dashboard",
+    "name": "Teacher Dashboard",
+    "image": "/projects/angular-dash.jpeg",
+    "tech": ["Angular", "TypeScript", "ApexCharts", "Playwright"],
+    "description": "A teacher analytics dashboard with charts, KPIs, and CRUD student management.",
+    "github": "https://github.com/yourname/project",
+    "live": "https://example.com"
+  },
+  {
+    "slug": "datasoft",
+    "name": "Datasoft CRM",
+    "image": "/projects/datasoft.jpeg",
+    "tech": ["React", "Node", "Postgres"],
+    "description": "CRM system for managing customers, deals, and analytics.",
+    "github": "https://github.com/yourname/project",
+    "live": "https://example.com"
+  }
+]
