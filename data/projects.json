@@ -16,5 +16,23 @@
     "description": "CRM system for managing customers, deals, and analytics.",
     "github": "https://github.com/yourname/project",
     "live": "https://example.com"
+  },
+  {
+    "slug": "bitarosa",
+    "name": "BitaRosa.com",
+    "image": "/projects/bitarosa-img.jpeg",
+    "tech": ["WordPress", "Astra", "PHP"],
+    "description": "Multi-Business owner client website featuring lead gen.",
+    "github": "https://github.com/yourname/project",
+    "live": "https://bitarosa.com"
+  },
+  {
+    "slug": "3d-app",
+    "name": "Spline 3D App",
+    "image": "/projects/3d.jpeg",
+    "tech": ["React", "Node", "Javascript", "Spline", "TailWind CSS"],
+    "description": "CRM system for managing customers, deals, and analytics.",
+    "github": "https://github.com/yourname/project",
+    "live": "https://example.com"
   }
 ]

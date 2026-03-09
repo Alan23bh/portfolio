@@ -35,7 +35,7 @@ body {
 }
 /* --- MDX / prose styling (Tailwind v4 friendly) --- */
 .mdx {
-  max-width: 70ch;
+  max-width: 100ch;
   line-height: 1.75;
 }
 
@@ -50,6 +50,7 @@ body {
 .mdx h2 {
   font-size: 1.5rem;
   font-weight: 700;
+  margin-top: 2rem;
 }
 
 .mdx h3 {
@@ -94,4 +95,9 @@ body {
   border-radius: 0.75rem;
   padding: 1rem;
   background: rgba(255, 255, 255, 0.06);
+}
+
+.reading {
+  max-width: 100ch;
+  margin: 0 auto;
 }

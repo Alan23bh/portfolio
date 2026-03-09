@@ -8,7 +8,7 @@ type Props = {
 
 export default function ProjectCard({ project }: Props) {
   return (
-    <div className="flex flex-col border border-gray-700 rounded-xl p-5 bg-neutral-900 hover:border-green-400 transition h-full hover:-translate-y-1 hover:shadow-lg">
+    <div className="flex min-w-[340px] max-w-[340px] flex-col rounded-xl border border-gray-700 bg-neutral-900 p-5 transition hover:-translate-y-1 hover:border-green-400 hover:shadow-lg">
       <div className="relative w-full h-48 mb-4 overflow-hidden rounded-lg">
         <Image
           src={project.image}

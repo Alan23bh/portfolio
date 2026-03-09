@@ -50,7 +50,7 @@ export default async function Home() {
       >
         <h2 className="mb-10 text-4xl font-bold ">Projects</h2>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="flex gap-2 overflow-x-auto pb-1">
           {projects.map((project) => (
             <ProjectCard key={project.slug} project={project} />
           ))}

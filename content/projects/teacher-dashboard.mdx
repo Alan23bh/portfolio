@@ -2,31 +2,55 @@
 title: "Teacher Dashboard"
 ---
 
+<ProjectSnapshot
+  title="Key takeaway"
+  imageSrc="/projects/angular-dash.jpeg"
+  imageAlt="Teacher Dashboard - Main Analytics View"
+>
+  This project helped me practice building a polished dashboard experience while
+  also treating the app like a more realistic production build. One of the
+  biggest takeaways was learning how much more stable Playwright tests become
+  when locators are structured clearly and the test setup stays intentional.
+</ProjectSnapshot>
+
+<div className="reading">
+
+## Overview
+
+Teacher Dashboard is a frontend project focused on helping educators quickly
+understand class performance through clear KPIs, chart visualizations, and
+student management views. My goal was to build an interface that felt easy to
+scan, practical to use, and strong enough to present as a polished portfolio
+case study.
+
 ## Problem
 
-Teachers needed a quick way to see student performance and class trends.
+Teachers often have to work across scattered pieces of information to understand
+attendance trends, student performance, and classroom health. I wanted to create
+a dashboard experience that brought those signals together in one place so the
+user could move from high-level metrics to more detailed student information
+without friction.
 
 ## Solution
 
-Built a dashboard with KPIs + charts + student management.
+I designed and built a dashboard that combines summary KPI cards, chart-based
+insights, and CRUD-style student management patterns. The focus was not only on
+displaying data, but on creating a clear visual hierarchy so the most important
+information could be understood at a glance.
 
 ## What I built
 
-- KPI cards
-- Charts (ApexCharts)
-- CRUD students
-- E2E tests with Playwright + CI
+The project includes a main analytics dashboard with KPI cards, chart components,
+and views that support student-focused workflows. I also treated the project
+like a real production-style build by adding Playwright end-to-end tests and
+improving test stability with more maintainable selector patterns.
 
 ## Lessons learned
 
-- Stable locators for E2E
-- Chart components + state management patterns
-  <Callout title="Key takeaway">
-    Playwright locators + a small Page Object pattern made the E2E tests stable
-    and readable.
-  </Callout>
+One of the biggest lessons from this project was how important stable testing
+structure becomes as a UI grows. I learned that Playwright locators and a small
+Page Object pattern made the test suite easier to read and less fragile over
+time. I also got more practice balancing interface polish with component
+structure and maintainability.
 
-<MdxImage
-  src="/projects/angular-dash.jpeg"
-  alt="Teacher Dashboard - main analytics view"
-/>
+</div>
