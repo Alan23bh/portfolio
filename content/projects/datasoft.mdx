@@ -2,16 +2,79 @@
 title: "Datasoft CRM"
 ---
 
+<ProjectSnapshot
+  title="Key takeaway"
+  imageSrc="/projects/datasoft.jpeg"
+  imageAlt="Teacher Dashboard - Main Analytics View"
+>
+  This project helped me practice building a more realistic SaaS-style dashboard interface with authentication, protected routes, and complex UI components like charts and data tables.
+
+One of the biggest takeaways was learning how authentication flows and route protection work in a modern Next.js application using NextAuth and middleware.
+
+</ProjectSnapshot>
+<div className="reading">
+## This project focuses primarily on frontend architecture, dashboard UX patterns, and integrating authentication with protected application routes.
+
+---
+
+## Key Features
+
+• Interactive analytics dashboard with Recharts visualizations  
+• KPI cards for quick business insights  
+• MUI Data Grid table with sorting, pagination, and row selection  
+• Google OAuth authentication with protected dashboard routes  
+• Light/Dark theme system built with Material UI theming
+
+---
+
+## Overview
+
+DataSoft CRM is a front-end focused analytics dashboard designed to simulate a modern internal SaaS tool. The goal of the project was to create a structured dashboard experience that allows users to monitor metrics, explore data through tables and charts, and navigate a multi-page authenticated application.
+
+The project demonstrates how a modern React / Next.js dashboard might be structured with authentication, route protection, reusable UI components, and data visualization.
+
+---
+
 ## Problem
 
-Tracking customers and deals was messy and manual.
+Many internal business tools need dashboards that present complex data in a way that is easy to scan and interact with. These tools often require secure access, structured navigation, and flexible components that support data exploration.
+
+I wanted to build a dashboard that simulated a real SaaS-style internal analytics tool while focusing on clean UI structure, authentication flow, and scalable component architecture.
+
+---
 
 ## Solution
 
-Built a CRM-style system with a simple dashboard + reporting.
+I built a multi-page dashboard using Next.js App Router that combines authentication, protected routes, charts, and data tables within a consistent UI layout.
+
+The application uses Material UI for a cohesive design system, NextAuth for Google authentication, and Recharts for data visualization. The layout structure mirrors what many real internal dashboards use, with persistent navigation, analytics views, and configurable UI themes.
+
+---
 
 ## What I built
 
-- Customer list + detail views
-- Deals pipeline
-- Basic analytics dashboard
+The project includes a full dashboard layout system with authentication and protected routes.
+
+Key functionality includes:
+
+• App shell layout with persistent sidebar navigation  
+• Top AppBar with theme toggle and user avatar  
+• Google OAuth authentication using NextAuth  
+• Protected dashboard routes using Next.js middleware  
+• Analytics dashboard with KPI cards and chart visualizations  
+• Transactions line chart showing activity trends  
+• Donut charts displaying user distribution  
+• MUI Data Grid table with sorting, pagination, and row selection  
+• Fully responsive dashboard layout
+
+---
+
+## Lessons learned
+
+One of the most valuable lessons from this project was understanding how authentication integrates with application routing in Next.js.
+
+Using NextAuth together with middleware helped reinforce how protected routes work in modern applications. I also gained experience building reusable layout components and structuring dashboard pages so they remain consistent and scalable.
+
+Additionally, working with Material UI theming improved my understanding of how design systems help maintain consistent styling across complex interfaces.
+
+</div>

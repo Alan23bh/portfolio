@@ -4,35 +4,44 @@
     "name": "Teacher Dashboard",
     "image": "/projects/angular-dash.jpeg",
     "tech": ["Angular", "TypeScript", "ApexCharts", "Playwright"],
-    "description": "A teacher analytics dashboard with charts, KPIs, and CRUD student management.",
-    "github": "https://github.com/yourname/project",
-    "live": "https://example.com"
+    "description": "A responsive classroom analytics dashboard built with Angular and TypeScript that helps educators monitor attendance trends, student performance, and classroom insights through KPI cards, interactive charts, and student management views.",
+    "github": "https://github.com/Alan23bh/education-admin-dashboard",
+    "live": "https://education-admin-dashboard.vercel.app/app/dashboard"
   },
   {
     "slug": "datasoft",
     "name": "Datasoft CRM",
     "image": "/projects/datasoft.jpeg",
-    "tech": ["React", "Node", "Postgres"],
-    "description": "CRM system for managing customers, deals, and analytics.",
-    "github": "https://github.com/yourname/project",
-    "live": "https://example.com"
+    "tech": ["Next.js", "TypeScript", "Material UI", "Recharts", "NextAuth"],
+    "description": "A modern SaaS-style analytics dashboard featuring authentication, protected routes, KPI insights, interactive charts, and data table management.",
+    "github": "https://github.com/Alan23bh/mui-data-analytics-dashboard",
+    "live": "https://mui-data-analytics-dashboard.vercel.app/"
   },
   {
     "slug": "bitarosa",
     "name": "BitaRosa.com",
     "image": "/projects/bitarosa-img.jpeg",
-    "tech": ["WordPress", "Astra", "PHP"],
-    "description": "Multi-Business owner client website featuring lead gen.",
+    "tech": ["WordPress", "Astra", "WPForms"],
+    "description": "A multi-service business website built for a real client to promote hair, nail, and event services while generating new customer leads.",
     "github": "https://github.com/yourname/project",
     "live": "https://bitarosa.com"
+  },
+  {
+    "slug": "next-shop",
+    "name": "Next-Shop – E-Commerce Interface",
+    "image": "/projects/next-shop.jpeg",
+    "tech": ["Next.js", "TypeScript", "React", "Material UI", "Context API"],
+    "description": "A responsive e-commerce interface focused on global state management, reusable components, and cart logic using React Context and useReducer.",
+    "github": "https://github.com/Alan23bh/nextjs-ecommerce-store",
+    "live": "https://nextjs-ecommerce-store-psi.vercel.app/products"
   },
   {
     "slug": "3d-app",
     "name": "Spline 3D App",
     "image": "/projects/3d.jpeg",
-    "tech": ["React", "Node", "Javascript", "Spline", "TailWind CSS"],
-    "description": "CRM system for managing customers, deals, and analytics.",
-    "github": "https://github.com/yourname/project",
-    "live": "https://example.com"
+    "tech": ["React", "Vite", "Tailwind CSS", "Spline", "AOS"],
+    "description": "An interactive 3D landing page inspired by modern SaaS products, focused on animation, responsive design, and user experience.",
+    "github": "https://github.com/Alan23bh/3D-Landing-Page",
+    "live": "https://3-d-landing-page-three.vercel.app/"
   }
 ]
