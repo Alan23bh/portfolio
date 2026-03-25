@@ -9,6 +9,15 @@
     "live": "https://education-admin-dashboard.vercel.app/app/dashboard"
   },
   {
+    "slug": "next-shop",
+    "name": "Atlas Grooming – E-Commerce Store",
+    "image": "/projects/next-shop.png",
+    "tech": ["Next.js", "TypeScript", "React", "Material UI", "Context API"],
+    "description": "A fullstack e-commerce application built with Next.js (App Router), TypeScript, and Supabase. Features dynamic product data, persistent cart state, and a complete checkout flow, simulating a real-world online store experience.",
+    "github": "https://github.com/Alan23bh/nextjs-ecommerce-store",
+    "live": "https://nextjs-ecommerce-store-psi.vercel.app/products"
+  },
+  {
     "slug": "datasoft",
     "name": "Datasoft CRM",
     "image": "/projects/datasoft.jpeg",
@@ -26,15 +35,7 @@
     "github": "https://github.com/yourname/project",
     "live": "https://bitarosa.com"
   },
-  {
-    "slug": "next-shop",
-    "name": "Next-Shop – E-Commerce Interface",
-    "image": "/projects/next-shop.jpeg",
-    "tech": ["Next.js", "TypeScript", "React", "Material UI", "Context API"],
-    "description": "A responsive e-commerce interface focused on global state management, reusable components, and cart logic using React Context and useReducer.",
-    "github": "https://github.com/Alan23bh/nextjs-ecommerce-store",
-    "live": "https://nextjs-ecommerce-store-psi.vercel.app/products"
-  },
+
   {
     "slug": "3d-app",
     "name": "Spline 3D App",

@@ -1,97 +1,111 @@
 ---
-title: "Teacher Dashboard"
+title: "Atlas Grooming — Fullstack E-Commerce App"
 ---
 
 <ProjectSnapshot
   title="Key takeaway"
-  imageSrc="/projects/next-shop.jpeg"
-  imageAlt="E-Commerce Style App"
+  imageSrc="/projects/next-shop.png"
+  imageAlt="Atlas Grooming E-Commerce App"
 >
-  This project helped me strengthen my understanding of global state management
-  in React and how to structure scalable UI components. One of the biggest
-  takeaways was learning how predictable state transitions using useReducer make
-  complex UI interactions like cart management easier to maintain and debug.
+  This project marked a shift from building static UIs to developing a fullstack
+  application with real data flow. I focused on managing state, handling dynamic
+  product data, and creating a complete checkout experience. One of the biggest
+  takeaways was understanding how to structure scalable frontend architecture
+  while integrating a backend (Supabase) for real-world functionality.
 </ProjectSnapshot>
 
 <div className="reading">
-### This project focuses primarily on frontend architecture, state management,and building reusable UI components rather than backend integrations.
+
+### This project focuses on fullstack architecture, dynamic data handling, and building a realistic e-commerce experience with persistent state and a complete checkout flow.
 
 ---
 
 ## Key Features
 
-• Fully responsive product catalog using Material UI  
+• Dynamic product data powered by Supabase  
+• Fully responsive product catalog with category filtering  
 • Global cart state using React Context + useReducer  
+• Persistent cart state using localStorage hydration  
 • Add, remove, increment, and decrement cart items  
-• Automatic total price calculation  
-• Snackbar feedback for user actions  
-• Local product dataset for reliable production deployment
+• Complete checkout flow (shipping → summary → confirmation)  
+• Real-time total calculation  
+• Clean UI using Material UI components
 
 ---
 
 ## Overview
 
-This project is a frontend-focused e-commerce interface designed to simulate
-real-world shopping interactions such as browsing products and managing a cart.
+Atlas Grooming is a fullstack e-commerce application designed to simulate a
+real-world online store experience.
 
-The goal was to build a structured and maintainable UI while practicing global
-state management patterns commonly used in React applications.
+Users can browse products, manage a cart, and go through a multi-step checkout
+flow while interacting with dynamic data from a backend.
+
+The goal was to move beyond static frontend projects and build something that
+reflects how production applications handle state, data, and user interactions.
 
 ---
 
 ## Problem
 
-Managing shared state across multiple components can quickly become complex in
-React applications, especially when handling interactions like adding and
-removing items from a cart.
+Most frontend projects rely on static data or simple UI interactions, which
+doesn’t reflect how real applications manage dynamic data and user state.
 
-I wanted to explore a predictable and scalable approach to handling global
-state without relying on external libraries.
+Handling shared state (like a shopping cart) across multiple pages, while also
+keeping it persistent and predictable, can quickly become complex.
 
 ---
 
 ## Solution
 
-I implemented a global cart system using React Context combined with
-useReducer to manage state transitions in a clear and structured way.
+I built a fullstack solution using Supabase as a backend to serve product data,
+combined with React Context + useReducer to manage global state in a predictable way.
 
-The UI was built using Material UI components to maintain consistency, while
-the data layer was simplified by using a local dataset to avoid dependency on
-external APIs during deployment.
+Cart state is persisted using localStorage hydration, ensuring a seamless user
+experience across sessions.
+
+The checkout flow was designed to simulate a real purchasing process, including
+form handling and order summary logic.
 
 ---
 
 ## What I built
 
-Key elements of the project include:
-
-• Product grid layout with responsive design  
-• Product cards with actions (view, add to cart)  
+• Dynamic product listing and detail pages  
+• Category filtering and responsive grid layout  
 • Global cart system with reducer-based state management  
+• Persistent cart using localStorage  
 • Quantity controls and item removal  
-• Real-time total calculation  
-• Snackbar notifications for user feedback  
-• Fully responsive layout across devices
+• Multi-step checkout flow  
+• Order summary with calculated totals  
+• Fully responsive UI across devices
 
 ---
 
 ## Technical Highlights
 
-• Next.js App Router with TypeScript  
+• Next.js 16 (App Router) with TypeScript  
+• Supabase for backend data and API layer  
 • React Context + useReducer for global state  
-• Material UI for component-based design system  
-• Local dataset for stable deployment  
-• Component-based architecture for scalability
+• Material UI for scalable component design  
+• Local + remote data handling strategy  
+• Clean, modular component architecture
 
 ---
 
 ## Lessons learned
 
-This project reinforced how important predictable state management is when
-building interactive applications. Using useReducer helped me better
-understand how to structure state updates in a controlled and scalable way.
+This project helped me transition from building UI-focused applications to
+thinking more like a fullstack developer.
 
-I also learned how separating data from UI logic and avoiding unnecessary API
-dependencies can make applications more reliable and easier to deploy.
+I gained a deeper understanding of:
+
+- Managing global state in scalable ways
+- Handling dynamic data from a backend
+- Structuring multi-step user flows (checkout)
+- Building applications that feel closer to production
+
+It also reinforced how important predictable state management and clean
+architecture are when building interactive, data-driven applications.
 
 </div>
