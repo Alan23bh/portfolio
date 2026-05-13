@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Project } from "@/types/project";
 import Image from "next/image";
+import { Project } from "@/types/project";
 
 type Props = {
   project: Project;
@@ -8,50 +8,48 @@ type Props = {
 
 export default function ProjectCard({ project }: Props) {
   return (
-    <div className="flex min-w-[340px] max-w-[340px] flex-col rounded-xl border border-gray-700 bg-neutral-900 p-5 transition hover:-translate-y-1 hover:border-green-400 hover:shadow-lg">
-      <div className="relative w-full h-48 mb-4 overflow-hidden rounded-lg">
-        <Image
-          src={project.image}
-          alt={project.name}
-          fill
-          className="object-cover"
-        />
-      </div>
-      {/* Title */}
-      <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
+    <article className="project-card">
+      <Link href={`/projects/${project.slug}`} className="project-image-link">
+        <div className="project-image-frame">
+          <Image
+            src={project.image}
+            alt={project.name}
+            fill
+            sizes="(min-width: 768px) 50vw, 100vw"
+            className="project-image"
+          />
+        </div>
+      </Link>
 
-      {/* Description */}
-      <p className="text-gray-400 text-sm mb-4">{project.description}</p>
+      <div className="project-body">
+        <div className="project-heading">
+          <h3 className="project-title">{project.name}</h3>
+          <p className="project-description">{project.description}</p>
+        </div>
 
-      {/* Tech stack */}
-      <div className="flex flex-wrap gap-2 mb-4 justify-center">
-        {project.tech.map((tech) => (
-          <span
-            key={tech}
-            className="text-xs border border-green-500 px-2 py-1 rounded"
+        <div className="project-tags">
+          {project.tech.slice(0, 3).map((tech) => (
+            <span key={tech} className="pill">
+              {tech}
+            </span>
+          ))}
+        </div>
+
+        <div className="project-links">
+          <Link href={`/projects/${project.slug}`} className="text-link">
+            Read case study
+          </Link>
+
+          <a
+            href={project.live}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-link text-link-muted"
           >
-            {tech}
-          </span>
-        ))}
+            Live site
+          </a>
+        </div>
       </div>
-
-      {/* Buttons */}
-      <div className="flex gap-3 justify-center mt-auto">
-        <a
-          href={project.live}
-          target="_blank"
-          className="text-sm border px-3 py-1 rounded hover:bg-green-500 hover:text-black"
-        >
-          View
-        </a>
-
-        <Link
-          href={`/projects/${project.slug}`}
-          className="text-sm border px-3 py-1 rounded hover:bg-green-500 hover:text-black"
-        >
-          Case Study
-        </Link>
-      </div>
-    </div>
+    </article>
   );
 }

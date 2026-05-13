@@ -1,43 +1,61 @@
+import Image from "next/image";
+
 export default function Contact() {
   return (
-    <section id="contact" className="mx-auto max-w-6xl px-6 py-24 scroll-mt-24">
-      <h2 className="mb-6 text-4xl font-bold text-center">Contact</h2>
+    <section id="contact" className="section">
+      <div className="container">
+        <div className="contact-shell">
+          <div className="contact-top">
+            <div className="contact-copy">
+              <p className="eyebrow">Contact</p>
+              <h2 className="section-title">Let’s build something strong.</h2>
+              <p className="section-copy">
+                I’m currently looking for front-end opportunities where I can
+                contribute to polished product UI, thoughtful user experience,
+                and modern React development.
+              </p>
+            </div>
 
-      <p className="mx-auto mb-12 max-w-2xl text-center text-gray-400">
-        If you'd like to collaborate, discuss a project, or just connect, feel
-        free to reach out through any of the links below.
-      </p>
+            <div className="contact-photo-wrap">
+              <div className="contact-photo-ring">
+                <Image
+                  src="/profile/alan.jpg"
+                  alt="Portrait of Alan Hernandez"
+                  width={160}
+                  height={160}
+                  className="contact-photo"
+                />
+              </div>
+            </div>
+          </div>
 
-      <div className="grid gap-6 md:grid-cols-3">
-        <a
-          href="mailto:alan23bh@gmail.com"
-          className="rounded-2xl border border-gray-800 bg-white/5 p-6 text-center transition hover:border-white"
-        >
-          <p className="mb-2 font-semibold text-white">Email</p>
-          <p className="text-sm text-gray-400">alan23bh@gmail.com</p>
-        </a>
+          <div className="contact-grid">
+            <a href="mailto:alan23bh@gmail.com" className="contact-card">
+              <span className="contact-label">Email</span>
+              <span className="contact-value">alan23bh@gmail.com</span>
+            </a>
 
-        <a
-          href="https://github.com/Alan23bh"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="rounded-2xl border border-gray-800 bg-white/5 p-6 text-center transition hover:border-white"
-        >
-          <p className="mb-2 font-semibold text-white">GitHub</p>
-          <p className="text-sm text-gray-400">github.com/Alan23bh</p>
-        </a>
+            <a
+              href="https://github.com/Alan23bh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-card"
+            >
+              <span className="contact-label">GitHub</span>
+              <span className="contact-value">Alan23bh</span>
+            </a>
 
-        <a
-          href="https://www.linkedin.com/in/alan-hernandez-aa8458326/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="rounded-2xl border border-gray-800 bg-white/5 p-6 text-center transition hover:border-white"
-        >
-          <p className="mb-2 font-semibold text-white">LinkedIn</p>
-          <p className="text-sm text-gray-400">
-            linkedin.com/in/alan-hernandez-aa8458326
-          </p>
-        </a>
+            <a
+              href="https://www.linkedin.com/in/alan-hernandez-aa8458326/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-card"
+            >
+              <span className="contact-label">LinkedIn</span>
+              <span className="contact-value">Alan Hernandez</span>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

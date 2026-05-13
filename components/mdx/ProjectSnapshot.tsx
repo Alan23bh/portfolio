@@ -14,18 +14,15 @@ export default function ProjectSnapshot({
   children,
 }: Props) {
   return (
-    <section className="my-16 rounded-3xl border border-green-800 bg-white/[0.02] p-8 md:p-10">
-      <div className="grid gap-10 md:grid-cols-[1.05fr_1.35fr] md:items-start">
-        {/* Text side */}
-        <div className="rounded-2xl border border-gray-800 bg-white/5 p-8">
-          <h3 className="mb-5 text-2xl font-semibold text-white">{title}</h3>
-          <div className="text-lg leading-8 text-gray-300">{children}</div>
-        </div>
+    <section className="project-snapshot">
+      <div className="project-snapshot-copy">
+        <p className="project-snapshot-eyebrow">Project Snapshot</p>
+        <h2 className="project-snapshot-title">{title}</h2>
+        <div className="project-snapshot-text">{children}</div>
+      </div>
 
-        {/* Image side */}
-        <div className="max-w-2xl">
-          <MdxImage src={imageSrc} alt={imageAlt} />
-        </div>
+      <div className="project-snapshot-media">
+        <MdxImage src={imageSrc} alt={imageAlt} />
       </div>
     </section>
   );
