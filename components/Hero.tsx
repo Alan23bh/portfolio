@@ -80,7 +80,7 @@ export default function Hero({ featuredProject }: Props) {
           <p className="eyebrow">Front-end developer · Open to work</p>
 
           <h1 className="hero-title">
-            I build polished React interfaces that feel production-ready.
+            I build polished front-end interfaces for modern web products.
           </h1>
 
           <p className="hero-copy">

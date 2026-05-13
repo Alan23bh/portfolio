@@ -12,7 +12,7 @@ export default function Contact() {
               <p className="section-copy">
                 I’m currently looking for front-end opportunities where I can
                 contribute to polished product UI, thoughtful user experience,
-                and modern React development.
+                and modern development.
               </p>
             </div>
 
