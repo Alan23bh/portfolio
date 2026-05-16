@@ -6,16 +6,9 @@ import TestimonialCard from "@/components/TestimonialCard";
 import testimonials from "@/data/testimonials.json";
 
 export default async function Home() {
-  const featuredProject =
-    projects.find((project) => project.slug === "next-shop") ?? projects[0];
-
-  const remainingProjects = projects.filter(
-    (project) => project.slug !== featuredProject.slug,
-  );
-
   return (
     <main className="min-h-screen">
-      <Hero featuredProject={featuredProject} />
+      <Hero />
 
       <section id="projects" className="section">
         <div className="container">
@@ -29,7 +22,7 @@ export default async function Home() {
           </div>
 
           <div className="project-grid">
-            {remainingProjects.map((project) => (
+            {projects.map((project) => (
               <ProjectCard key={project.slug} project={project} />
             ))}
           </div>

@@ -19,8 +19,8 @@
   },
   {
     "slug": "datasoft",
-    "name": "Datasoft CRM",
-    "image": "/projects/datasoft.jpeg",
+    "name": "Datasoft Analytics",
+    "image": "/projects/datasoft1.png",
     "tech": ["Next.js", "TypeScript", "Material UI", "Recharts", "NextAuth"],
     "description": "A modern SaaS-style analytics dashboard featuring authentication, protected routes, KPI insights, interactive charts, and data table management.",
     "github": "https://github.com/Alan23bh/mui-data-analytics-dashboard",
