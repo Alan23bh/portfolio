@@ -89,7 +89,12 @@ export default function Hero() {
             >
               LinkedIn
             </a>
-            <a href="/resume.pdf" target="_blank" className="hero-social-link">
+            <a
+              href="/Alan_Hernandez_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hero-social-link"
+            >
               Resume
             </a>
           </div>
