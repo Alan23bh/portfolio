@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Project } from "@/types/project";
-
+import { FiEye, FiCode, FiFileText } from "react-icons/fi";
 type Props = {
   project: Project;
 };
@@ -36,18 +36,35 @@ export default function ProjectCard({ project }: Props) {
         </div>
 
         <div className="project-links">
-          <Link href={`/projects/${project.slug}`} className="text-link">
-            Read case study
-          </Link>
-
           <a
             href={project.live}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-link text-link-muted"
+            className="project-link-primary"
           >
-            Live site
+            <FiEye size={16} />
+            Live Demo
           </a>
+
+          <Link
+            href={`/projects/${project.slug}`}
+            className="project-link-secondary"
+          >
+            <FiFileText size={15} />
+            Case Study
+          </Link>
+
+          {project.github && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link-icon"
+              aria-label={`${project.name} GitHub repository`}
+            >
+              <FiCode size={17} />
+            </a>
+          )}
         </div>
       </div>
     </article>
