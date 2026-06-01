@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import {
   SiNextdotjs,
   SiReact,
@@ -7,33 +6,18 @@ import {
   SiTailwindcss,
   SiJavascript,
   SiFigma,
+  SiGithub,
 } from "react-icons/si";
+import { HiOutlineDocumentText } from "react-icons/hi2";
+import { FaLinkedin } from "react-icons/fa";
 
 const techIcons = [
-  {
-    icon: SiJavascript,
-    color: "#F7DF1E",
-  },
-  {
-    icon: SiTailwindcss,
-    color: "#38BDF8",
-  },
-  {
-    icon: SiReact,
-    color: "#61DAFB",
-  },
-  {
-    icon: SiNextdotjs,
-    color: "#ffffff",
-  },
-  {
-    icon: SiTypescript,
-    color: "#3178C6",
-  },
-  {
-    icon: SiFigma,
-    color: "#F24E1E",
-  },
+  { icon: SiJavascript, color: "#F7DF1E" },
+  { icon: SiTailwindcss, color: "#38BDF8" },
+  { icon: SiReact, color: "#61DAFB" },
+  { icon: SiNextdotjs, color: "#ffffff" },
+  { icon: SiTypescript, color: "#3178C6" },
+  { icon: SiFigma, color: "#F24E1E" },
 ];
 
 const repeatedTechIcons = [
@@ -62,7 +46,7 @@ export default function Hero() {
             architecture, and interfaces that feel clear, fast, and refined.
           </p>
 
-          <div className="hero-actions">
+          <div className="hero-cta-group">
             <a href="#projects" className="btn btn-primary">
               View Projects
             </a>
@@ -70,33 +54,41 @@ export default function Hero() {
             <a href="#contact" className="btn btn-secondary">
               Contact Me
             </a>
-          </div>
 
-          <div className="hero-socials" aria-label="Social links">
-            <a
-              href="https://github.com/Alan23bh"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hero-social-link"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://www.linkedin.com/in/alan-hernandez-aa8458326/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hero-social-link"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="/Alan_Hernandez_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hero-social-link"
-            >
-              Resume
-            </a>
+            <div className="hero-icon-actions" aria-label="Social links">
+              <a
+                href="https://github.com/Alan23bh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero-icon-button"
+                aria-label="GitHub"
+                title="GitHub"
+              >
+                <SiGithub />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/alan-hernandez-aa8458326/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero-icon-button"
+                aria-label="LinkedIn"
+                title="LinkedIn"
+              >
+                <FaLinkedin />
+              </a>
+
+              <a
+                href="/Alan_Hernandez_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero-icon-button"
+                aria-label="Resume"
+                title="Resume"
+              >
+                <HiOutlineDocumentText />
+              </a>
+            </div>
           </div>
 
           <div className="hero-tech-marquee" aria-label="Technologies">

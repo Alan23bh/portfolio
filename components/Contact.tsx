@@ -98,7 +98,7 @@ export default function Contact() {
     <section id="contact" className="section">
       <div className="container">
         <div className="contact-shell">
-          <div className="contact-top">
+          <div className="contact-layout">
             <div className="contact-copy">
               <p className="eyebrow">Contact</p>
               <h2 className="section-title">Let’s build something strong.</h2>
@@ -109,37 +109,39 @@ export default function Contact() {
               </p>
             </div>
 
-            <div className="contact-photo-wrap">
-              <div className="contact-photo-ring">
-                <Image
-                  src="/profile/alan.jpg"
-                  alt="Portrait of Alan Hernandez"
-                  width={160}
-                  height={160}
-                  className="contact-photo"
-                />
+            <div className="contact-side">
+              <div className="contact-photo-wrap">
+                <div className="contact-photo-ring">
+                  <Image
+                    src="/profile/alan.jpg"
+                    alt="Portrait of Alan Hernandez"
+                    width={200}
+                    height={200}
+                    className="contact-photo"
+                  />
+                </div>
+              </div>
+
+              <div className="contact-grid">
+                {contacts.map((item) => (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    target={item.external ? "_blank" : undefined}
+                    rel={item.external ? "noopener noreferrer" : undefined}
+                    className="contact-card"
+                  >
+                    <span className="contact-icon-wrap">
+                      <ContactIcon type={item.icon} />
+                    </span>
+
+                    <span className="contact-label">{item.label}</span>
+
+                    <ArrowIcon />
+                  </a>
+                ))}
               </div>
             </div>
-          </div>
-
-          <div className="contact-grid">
-            {contacts.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                target={item.external ? "_blank" : undefined}
-                rel={item.external ? "noopener noreferrer" : undefined}
-                className="contact-card"
-              >
-                <span className="contact-icon-wrap">
-                  <ContactIcon type={item.icon} />
-                </span>
-
-                <span className="contact-label">{item.label}</span>
-
-                <ArrowIcon />
-              </a>
-            ))}
           </div>
         </div>
       </div>
