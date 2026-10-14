@@ -1,48 +1,59 @@
 [
   {
-    "slug": "teacher-dashboard",
-    "name": "Teacher Dashboard",
-    "image": "/projects/angular-dash.jpeg",
-    "tech": ["Angular", "TypeScript", "ApexCharts", "Playwright"],
-    "description": "A responsive classroom analytics dashboard built with Angular and TypeScript that helps educators monitor attendance trends, student performance, and classroom insights through KPI cards, interactive charts, and student management views.",
-    "github": "https://github.com/Alan23bh/education-admin-dashboard",
-    "live": "https://education-admin-dashboard.vercel.app/app/dashboard"
+    "slug": "diamond-ace",
+    "name": "Diamond Ace Construction",
+    "image": "/projects/diamond-ace-approach.png",
+    "tech": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "WebdriverIO"
+    ],
+    "description": "A production website built for a Central Florida painting and drywall repair company, featuring responsive service pages, a guided estimate-request workflow, production lead capture, and ongoing frontend maintenance.",
+    "github": "https://github.com/Alan23bh/diamond-ace-construction-production",
+    "live": "https://dacflorida.netlify.app"
+  },
+  {
+    "slug": "bitarosa",
+    "name": "Bitarosa",
+    "image": "/projects/bitarosa-img.jpeg",
+    "tech": [
+      "WordPress",
+      "Astra",
+      "WPForms"
+    ],
+    "description": "A responsive WordPress website delivered for a real small-business client, focused on mobile usability, clear service navigation, lead capture, and reliable production behavior.",
+    "github": "",
+    "live": "https://bitarosa.com"
   },
   {
     "slug": "next-shop",
     "name": "Atlas Grooming – E-Commerce Store",
     "image": "/projects/next-shop.png",
-    "tech": ["Next.js", "TypeScript", "React", "Material UI", "Context API"],
-    "description": "A fullstack e-commerce application built with Next.js (App Router), TypeScript, and Supabase. Features dynamic product data, persistent cart state, and a complete checkout flow, simulating a real-world online store experience.",
+    "tech": [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Material UI",
+      "Context API"
+    ],
+    "description": "A fullstack e-commerce application built with Next.js (App Router), TypeScript, and Supabase. Features dynamic product data, persistent cart state, and a checkout flow with shipping, order summary, and confirmation screens.",
     "github": "https://github.com/Alan23bh/nextjs-ecommerce-store",
     "live": "https://nextjs-ecommerce-store-psi.vercel.app/products"
   },
   {
-    "slug": "datasoft",
-    "name": "Datasoft Analytics",
-    "image": "/projects/datasoft1.png",
-    "tech": ["Next.js", "TypeScript", "Material UI", "Recharts", "NextAuth"],
-    "description": "A modern SaaS-style analytics dashboard featuring authentication, protected routes, KPI insights, interactive charts, and data table management.",
-    "github": "https://github.com/Alan23bh/mui-data-analytics-dashboard",
-    "live": "https://mui-data-analytics-dashboard.vercel.app/"
-  },
-  {
-    "slug": "bitarosa",
-    "name": "BitaRosa.com",
-    "image": "/projects/bitarosa-img.jpeg",
-    "tech": ["WordPress", "Astra", "WPForms"],
-    "description": "A multi-service business website built for a real client to promote hair, nail, and event services while generating new customer leads.",
-    "github": "https://github.com/yourname/project",
-    "live": "https://bitarosa.com"
-  },
-
-  {
-    "slug": "3d-app",
-    "name": "Spline 3D App",
-    "image": "/projects/3d.jpeg",
-    "tech": ["React", "Vite", "Tailwind CSS", "Spline", "AOS"],
-    "description": "An interactive 3D landing page inspired by modern SaaS products, focused on animation, responsive design, and user experience.",
-    "github": "https://github.com/Alan23bh/3D-Landing-Page",
-    "live": "https://3-d-landing-page-three.vercel.app/"
+    "slug": "teacher-dashboard",
+    "name": "Education Analytics Admin Dashboard",
+    "image": "/projects/angular-dash.jpeg",
+    "tech": [
+      "Angular",
+      "TypeScript",
+      "ApexCharts",
+      "Playwright"
+    ],
+    "description": "A responsive analytics dashboard built with Angular and TypeScript, featuring KPI metrics, attendance trends, grade distributions, at-risk student views, and automated end-to-end testing.",
+    "github": "https://github.com/Alan23bh/education-admin-dashboard",
+    "live": "https://education-admin-dashboard.vercel.app/app/dashboard"
   }
 ]

@@ -14,10 +14,10 @@ export default async function Home() {
         <div className="container">
           <div className="section-heading">
             <p className="eyebrow">Selected Work</p>
-            <h2 className="section-title">Work shaped by product thinking.</h2>
+            <h2 className="section-title">Client work backed by product thinking.</h2>
             <p className="section-copy">
-              Front-end work across e-commerce, dashboards, data-heavy UI, and
-              responsive product experiences.
+              Production websites, e-commerce, analytics dashboards, and responsive
+              interfaces built across modern frontend stacks.
             </p>
           </div>
 
@@ -39,7 +39,7 @@ export default async function Home() {
           </div>
 
           <div className="testimonial-grid">
-            {testimonials.slice(0, 2).map((testimonial) => (
+            {testimonials.slice(0, 3).map((testimonial) => (
               <TestimonialCard
                 key={`${testimonial.name}-${testimonial.company}`}
                 testimonial={testimonial}
