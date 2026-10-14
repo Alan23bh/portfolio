@@ -39,7 +39,7 @@ export default async function Home() {
           </div>
 
           <div className="testimonial-grid">
-            {testimonials.slice(0, 2).map((testimonial) => (
+            {testimonials.slice(0, 3).map((testimonial) => (
               <TestimonialCard
                 key={`${testimonial.name}-${testimonial.company}`}
                 testimonial={testimonial}
